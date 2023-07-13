@@ -9,10 +9,7 @@ export default function AlbumComponent(props) {
     const { id, name, url } = album;
 
     const handlingClickEvent = () => {
-        console.log(helper)
-        if (helper) {
-            return;
-        }
+        if (helper) {return;}
         openAlbum(id, name);
     };
     const handleEditing = () => {
