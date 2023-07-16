@@ -118,8 +118,8 @@ export default function App() {
   const deleteImage = async (imageId) => {
     const { id, unsub2, name } = helper;//~ remove data ,what you add inside helper during startEditing
     setHelper({ id, unsub2, name });
-    notify(`Image Deleted Sucessfully`)
-    await deleteDoc(doc(db, "landingPage", helper.id, "imageCollection", imageId));
+    notify(`Sorry, you are not allowed to delete this item`);
+    // await deleteDoc(doc(db, "landingPage", helper.id, "imageCollection", imageId));
   }
 
 
